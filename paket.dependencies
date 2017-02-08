@@ -1,0 +1,10 @@
+source https://api.nuget.org/v3/index.json
+
+framework: net46
+
+nuget Argu
+nuget FAKE
+nuget FParsec
+nuget NUnit
+nuget NUnit.Console
+nuget Unquote

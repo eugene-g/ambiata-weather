@@ -1,0 +1,21 @@
+FRAMEWORK: NET46
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Argu (3.7)
+    FAKE (4.50)
+    FParsec (1.0.2)
+    NUnit (3.6)
+    NUnit.Console (3.6)
+      NUnit.ConsoleRunner (>= 3.6)
+      NUnit.Extension.NUnitProjectLoader (>= 3.5)
+      NUnit.Extension.NUnitV2Driver (>= 3.6)
+      NUnit.Extension.NUnitV2ResultWriter (>= 3.5)
+      NUnit.Extension.TeamCityEventListener (>= 1.0.2)
+      NUnit.Extension.VSProjectLoader (>= 3.5)
+    NUnit.ConsoleRunner (3.6)
+    NUnit.Extension.NUnitProjectLoader (3.5)
+    NUnit.Extension.NUnitV2Driver (3.6)
+    NUnit.Extension.NUnitV2ResultWriter (3.5)
+    NUnit.Extension.TeamCityEventListener (1.0.2)
+    NUnit.Extension.VSProjectLoader (3.5)
+    Unquote (3.1.2)
