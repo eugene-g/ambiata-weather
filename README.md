@@ -5,4 +5,7 @@ Ambiata [Weather Observations](https://github.com/ambiata/interview/blob/master/
 
 **generate_test_data.fsx** — script for generating test data.<br/>
 **build.fsx** — FAKE tasks (Build and RunTests).<br/>
-**AmbiataWeather** — main application. Use --help for usage info.
+**AmbiataWeather** — main application, --help for usage info.
+
+
+Before build, open console and invoke **paket install** command in the project root to download referenced libraries and tools.
