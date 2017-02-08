@@ -104,22 +104,22 @@ let recordsGen =
 
 let generate numberOfBatches =
     seq {
-        printfn ""
-        let sw = new Stopwatch()
-        sw.Start()
-
         for i in 1..numberOfBatches do
             Console.CursorLeft <- 0
             Console.CursorTop <- Console.CursorTop - 1
 
             printfn "writing batch %i out of %i..." i numberOfBatches
             yield! [for i in Seq.take batchSize recordsGen -> i]
-
-        printfn "done!"
-        printfn "execution time: %is" (sw.ElapsedMilliseconds / (int64 1000))
     }
 
 
 printfn "creating %i batches of size %i" getNumberOfBatches batchSize
 
+printfn ""
+let sw = new Stopwatch()
+sw.Start()
+
 File.WriteAllLines(output, generate getNumberOfBatches)
+
+printfn "Done! See %s for results." output
+printfn "Execution time: %is" (sw.ElapsedMilliseconds / (int64 1000))
